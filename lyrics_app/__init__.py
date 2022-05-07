@@ -38,4 +38,7 @@ def create_app():
     from .routes.reviews import reviews as reviews_blueprint
     app.register_blueprint(reviews_blueprint)
 
+    from .routes.follow import follow as follow_blueprint
+    app.register_blueprint(follow_blueprint)
+
     return app
